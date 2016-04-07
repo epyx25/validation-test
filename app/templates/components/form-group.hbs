@@ -1,0 +1,12 @@
+{{#if label}}
+  <label>{{label}}</label>
+{{/if}}
+{{yield comp}}
+{{log validation.isValid}}
+<div class="input-error">
+    {{#if showMessage}}
+        <div class="error">
+            {{v-get model property 'message'}}
+        </div>
+    {{/if}}
+</div>
